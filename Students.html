@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Student info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="js/students.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Css/Students.css" />
+</head>
+<body onload = "loaded();">
+    <div class="grid-container">
+        <div class="item1">
+            <Table id="StudentTbl" class="table table-bordered table-striped table-hover" >
+                <thead class="thead-dark">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>GPA</th>
+                    <th>SAT</th>
+                    <th>Year</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </Table>
+        </div>
+        <div class="item2">
+        <!-- <form> -->
+            <table>
+                <tr>
+                    <td>Id: </td><td><input id="pId" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Name: </td><td><input id="pName" type="text"></td>
+                </tr>
+                <tr>
+                    <td>GPA: </td><td><input id="pGpa" type="number"></td>
+                </tr>
+                <tr>
+                    <td>SAT: </td><td><input id="pSat" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Year: </td>
+                    <td><select id="pYear">
+                            <option value="FR">Freshman</option>
+                            <option value="SO">Sophomore</option>
+                            <option value="JR">Junior</option>
+                            <option value="SR">Senior</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div>
+            <button onclick=add(); class="btn btn-primary">Add</button>
+            <button onclick="addRando();" class="btn btn-secondary">Add Random Student</button>
+            </div>
+        </div>
+    </div>
+    <!-- </form>  -->
+    
+</body>
+</html>
+
